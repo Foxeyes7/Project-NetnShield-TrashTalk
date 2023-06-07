@@ -1,0 +1,153 @@
+<!--
+/**
+ * \\Author: Edgar Lefèvre - Emilio Châtel
+ * \\Company: ISEN Yncrea Ouest
+ * \\Email: edgar.lefevre@isen-ouest.yncrea.fr
+ * \\Email: emilio.chatel@isen-ouest.yncrea.fr
+ * \\Created Date: 31-Jan-2023 - 13:41:00
+ * \\Last Modified: 29-Mar-2023 - 10:00:00
+-->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Emilio Chatel - Edgar Lefevre">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="Access-Control-Allow-Headers" content="Content-Type">
+    <!-- Title -->
+    <title>TrashTalk</title>
+    <!-- Image -->
+    <link rel="shortcut icon" type="image/png" href="img/TrashTalk-transformed-carre.png">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- JS Scripts -->
+    <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js.cookie.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/chat.js" defer></script>
+  </head>
+  <body>
+    <!-- Errors -->
+    <section id="errors" class="container alert alert-danger d-none">
+    </section>
+    
+    <!-- accueil -->
+    <section id="accueil" class="d-none container-accueil">
+      <div class="container">
+        <div class="row justify-content-center align-items-center container-bloc-accueil">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-4 container-bloc-accueil-bleu">
+            <h2 class="container-bloc-acceuil-h2">TrashTalk</h2>
+            <img src="img/TrashTalk-transformed-carre.png" class="container-bloc-acceuil-image"/>
+            <button id="connexion" class="btn btn-dark container-bloc-acceuil-bouton1" type="button">Se connecter</button>
+            <button id="inscrip" class="btn btn-dark container-bloc-acceuil-bouton1" type="button">S'inscrire</button>
+            <a href="../index.html"><button id="inscrip" class="btn btn-dark container-bloc-acceuil-bouton1" type="button">Retour</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Inscription -->
+    <section id="inscription" class="d-none container-inscription">
+      <div class="container">
+        <div class="row justify-content-center align-items-center container-bloc-accueil">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-4 container-bloc-inscription-bleu">
+            <h2 class="container-bloc-acceuil-h2">Inscription</h2>
+            <img src="img/TrashTalk-transformed-carre.png" class="container-bloc-acceuil-image"/>
+            <form id="inscription-send">
+              <div class="input-group">
+                <input id="login_ins" type="text" class="container-bloc-inscription-form-control" autocomplete="username" placeholder="  Entrez votre pseudo" required autofocus>
+              </div>
+              <div class="input-group">
+                  <input id="password_ins" type="password" class="container-bloc-inscription-form-control" autocomplete="new-password" placeholder="  Entrez votre mot de passe" required autofocus>
+              </div>
+              <div class="input-group">
+                  <input id="conf_password_ins" type="password" class="container-bloc-inscription-form-control" autocomplete="new-password" placeholder="  Confirmer votre mot de passe" required autofocus>
+              </div>
+                <button type="submit" class="btn btn-dark container-bloc-inscription-bouton1">S'inscrire</button>
+                <button id="retourInsAcc" type="button" class="btn btn-dark container-bloc-inscription-bouton1">Retour</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connexion -->
+    <section id="authentication" class="d-none container-connexion ">
+      <div class="container">
+        <div class="row justify-content-center align-items-center container-bloc-accueil">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-4 container-bloc-connexion-bleu">
+            <h2 class="container-bloc-acceuil-h2">Connexion</h2>
+            <img src="img/TrashTalk-transformed-carre.png" class="container-bloc-acceuil-image"/>
+            <form id="authentication-send">
+              <div class="input-group">
+                <input id="login_co" type="text" class="container-bloc-connexion-form-control" autocomplete="username" placeholder="Entrez votre login" required autofocus>
+              </div>
+              <div class="input-group">
+                <input id="password_co" type="password" class="container-bloc-connexion-form-control" autocomplete="new-password" placeholder="Entrez votre mot de passe" required autofocus>
+              </div>
+              <button type="submit" class="btn btn-dark container-bloc-inscription-bouton1">Se connecter</button>
+              <button id="retourCoAcc" type="button" class="btn btn-dark container-bloc-inscription-bouton1">Retour</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- chat -->
+    <section id="chat" class="d-none container-chat-global">
+      <div class="container-chat-intermediaire">
+        <!-- container chat -->
+        <form id="message-send" class="Droite">
+          <div class="Droite-bleu">
+            <div id="user-pseudo-ami" class="Droite-top">
+            </div>
+            <!-- chat room -->
+            <div id="chat-room" class="Droite-middle" rows="10" readonly>
+            </div>
+            <!-- input texte -->
+            <div class="Droite-bottom">
+              <input id="message" type="text" class="Droite-bottom-message" placeholder="Entrez votre message" required autofocus></input>
+              <button type="submit"  class="btn Droite-bottom-button"><img src="img/126412.png" class="Droite-bottom-button-image"/></button>
+            </div>
+          </div>
+        </form>
+        <!-- container infos -->
+        <div class="Gauche">
+          <div class="Gauche-top">
+            <div class="Gauche-logo">
+              <img src="img/TrashTalk-transformed-carre.png" class="Gauche-logo-image"/>
+            </div>
+            <div id="user-pseudo" class="Gauche-pseudo">
+            </div>
+          </div>
+          <div class="Gauche-middle">
+            <button id="logout" class="btn Gauche-deco"><p class="Gauche-deco-texte">Déconnexion</p></button>
+            <button id="GoToTheDarkSIDE"  class="Effacer btn Gauche-middle-button"><img src="img/cadenasFUP.png" class="Gauche-middle-button-image" style="background-color:green;"/></button>
+            <button id="GoToTheWhiteSIDE"  class="Effacer btn Gauche-middle-button"><img src="img/cadenasOUP.png" class="Gauche-middle-button-image" style="background-color:red;"/></button>
+          </div>
+          <div class="Gauche-bottom">
+            <div class="Gauche-ajout-amis">
+              <!-- premier affichage -->
+              <p id="texte-ajout-amis" class="Gauche-ajout-amis-texte">Amis</p>
+              <button id="valider" type="button" class="btn Gauche-ajout-amis-button1">+</button>
+              <!-- deuxième affichage -->
+              <input id="ajout-dami" type="text" class="Effacer Gauche-ajout-amis-pseudo" placeholder="Entrez le Pseudo" ></input>
+              <button id="add" type="button" class="Effacer btn Gauche-ajout-amis-button2">+</button>
+            </div>
+            <select size="2" id="liste_amis" class="Gauche-liste-amis">
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

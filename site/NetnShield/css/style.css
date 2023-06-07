@@ -1,0 +1,668 @@
+@charset "UTF-8";
+/* ---------------- CGU ---------------------*/
+
+.container-cgu{
+    background-color: #000000; 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.container-bloc-cgu{
+    height: 100vh;
+}
+
+.container-bloc-cgu-bleu{
+    max-width: 90%;
+    max-height: 90%; 
+    min-width: 340px;
+    min-height: 400px; 
+    background-color: #0084FF; 
+    border-radius: 20px;
+    padding: 25px 10px;
+    flex-direction: column;
+    display: flex;
+}
+.container-bloc-cgu-h2{
+    order: 1;
+    text-align: center; 
+    color: #FFFFFF;
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 53px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-bloc-cgu-bouton{
+    order: 2;
+    background: #212121;
+    width: 30%; 
+    border-radius: 20px; 
+    margin: 10px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.zone-texte { 
+    padding: 10px;
+    order: 3;
+    overflow-y:scroll; 
+    height: 60%;
+} 
+
+
+
+
+/* ----------------- CSS Accueil ------------------ */
+.container-accueil{
+    background-color: #000000; 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.container-bloc-accueil{
+    height: 100vh;
+}
+
+.container-bloc-accueil-bleu{
+    max-width: 340px;
+    max-height: 400px; 
+    background-color: #0084FF; 
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+.container-bloc-acceuil-h2{
+    text-align: center; 
+    color: #FFFFFF;
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 53px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-bloc-acceuil-image{
+    width: 78px; 
+    margin: 10px auto; 
+    display: block; 
+    text-align: center;
+}
+
+.container-bloc-acceuil-bouton1{
+    background: #212121;
+    width: 90%; 
+    border-radius: 20px; 
+    margin: 10px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-bloc-acceuil-bouton2{
+    background: #212121;
+    width: 90%;
+    border-radius: 20px; 
+    margin-bottom: 30px; 
+    margin: 10px auto; 
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-bloc-accueil-cgu{
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    color: #212121;
+}
+
+/* ----------------- CSS Inscription ------------------ */
+
+.container-inscription{
+    background-color: #000000; 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.container-bloc-inscription-form-control{
+    background: #212121;
+    width: 90%; 
+    border-radius: 20px; 
+    margin-bottom: 30px;
+    margin: 5px auto; 
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.container-bloc-inscription-bleu{
+    max-width: 340px;
+    max-height: 480px; 
+    background-color: #0084FF; 
+    border-radius: 20px;
+    padding: 25px 10px;
+}
+
+.container-bloc-inscription-bouton1{
+    background: #212121;
+    width: 90%; 
+    border-radius: 20px; 
+    margin: 10px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------- CSS Connexion ------------------ */
+
+.container-connexion{
+    background-color: #000000; 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 0; 
+    margin: 0; 
+    font-family: 'Nokora', sans-serif;
+}
+
+.container-bloc-connexion-form-control{
+    background: #212121;
+    width: 90%; 
+    border-radius: 20px; 
+    margin-bottom: 30px;
+    margin: 5px auto; 
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.container-bloc-connexion-bleu{
+    max-width: 340px;
+    max-height: 480px; 
+    background-color: #0084FF; 
+    border-radius: 20px;
+    padding: 25px 10px;
+}
+
+/* ----------------- CSS Chat ------------------ */
+
+.container-chat-global{
+    background-color: #000000; 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 0; 
+    margin: 0; 
+    font-family: 'Nokora', sans-serif;
+    overflow: auto;
+}
+.container-chat-intermediaire {
+    background-color: purple;
+    margin: 0 auto;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*gauche*/
+.Gauche { 
+    width: 100%;
+    height: 43%;
+    /*background: #000000;*/
+    background: #000000;
+    order : 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.Gauche-top{ /* pseudo + logo  */
+    order: 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.Gauche-logo{ /* logo  */
+    order: 1;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+.Gauche-logo-image{ /* image */
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 50px;
+    width: 50px;
+}
+.Gauche-pseudo{ /* zone pseudo */
+    order: 2;
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    background-color: #0084FF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.Gauche-pseudo-texte{ /* pseudo */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Gauche-middle{ /* déconnexion + sécu */
+    order: 2;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.Gauche-deco{ /* déconnexion */
+    order: 1;
+    background: #212121;
+    margin: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.Gauche-deco-texte{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.Gauche-middle-button{ /* button*/
+    order: 2;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+} 
+.Gauche-middle-button-image{ /* image du button */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.Gauche-bottom{ /* liste d'amis + ajout */
+    order: 3;
+    width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #0084FF;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: relative;
+}
+
+.Gauche-ajout-amis{ /* ajout + texte*/
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    /*background: red;*/
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Gauche-ajout-amis-texte{ /* texte */
+    order: 1;
+    color: #FFFFFF;
+    padding: 8px;
+    height: 100%;
+    width: 50%;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 10px;
+}
+.Gauche-ajout-amis-button1{ /* bouton premier affichage */
+    order: 2;
+    background: #212121;
+    color: #FFFFFF;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.Gauche-ajout-amis-pseudo{
+    order: 1;
+    background: #212121;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    font-weight: 700;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+.Effacer{
+    display: none;
+}
+.Gauche-ajout-amis-pseudo{ /* liste amis deuxième affichage */
+    order: 1;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Gauche-ajout-amis-button2{ /* bouton deuxième affichage */
+    order: 2;
+    background: #212121;
+    color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.Gauche-liste-amis {
+    order: 2;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 10px;
+    overflow-y:auto;
+    position: relative;
+}
+
+.Gauche-ajout-amis-bloc-rouge{
+    background: #212121;
+    color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: red;
+}
+.Gauche-ajout-amis-bloc-vert{
+    background: #212121;
+    color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: green;
+}
+
+/*Droite*/
+.Droite { 
+    width: 100%;
+    height: 57%;
+    background: #000000;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Droite-bleu{
+    width:calc(100% - 20px);
+    height:calc(100% - 10px);
+    Background:#0084FF;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    display: flex;
+}
+
+.Droite-top{ /* Zone pour le pseudo */
+    order: 1;
+    background: #212121;
+    margin: 10px;
+    padding: 10px;
+    height: 40px;
+    width: calc(100% - 20px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.Droite-pseudo-texte{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+/*  */
+.Droite-middle{ /* Zone pour le chat */
+    background: #000000;
+    width: calc(100% - 20px); 
+    height: 100%;
+    border-radius: 20px; /* les bords ronds */
+    margin-left: 10px; /*le auto est pour la hauteur en fonction du pseudo et du message*/
+    margin-right: 10px; 
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    order: 2;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.Droite-middle-container-droite{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.Droite-middle-container-gauche{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-left: 0;
+    align-self: flex-start;
+}
+
+.Droite-middle-message-droite{
+    background-color: #0084FF;
+    color: #FFF; 
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0; 
+}
+.Droite-middle-heure-droite{
+    color: #FFF; 
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0; 
+    margin-left: auto ;
+}
+.Droite-middle-heure-gauche{
+    color: #FFF; 
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0; 
+    margin-right: auto ;
+}
+
+.Droite-middle-message-gauche{
+    background-color: #E5E5EA;
+    color: #000; 
+    border-radius: 20px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*////////////////////////////////////////////////////*/
+.Droite-bottom{ /* Zone pour le message + boutton d'envoi*/
+    order: 3;
+    flex-direction: row;
+    display: flex;
+    width: calc(100% - 20px);
+    height: 35px;
+    margin: 10px;
+}
+.Droite-bottom-message{  /* le message */
+    order: 1;
+    background: #212121;
+    width: 100%;
+    height: 35px;
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    
+    font-weight: 700;
+    line-height: 26px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    
+    overflow: auto;
+}
+.Droite-bottom-button{  /* le boutton envoyer */
+    order: 2;
+    width: 35px; 
+    height:35px;
+    position: relative;
+}
+.Droite-bottom-button-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Droite-bottom-button-image:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 650px ) {
+    .container-chat-intermediaire {
+        flex-direction: row; /* permet d'empiler les éléments enfants verticalement */
+    }
+    .Droite {
+        width: 70% ;
+        height: 100%;
+        order: 2;
+    }
+    .Gauche {
+        width: 30%;
+        height: 100%;
+        order: 1;
+    }
+    .Gauche-top{ /* pseudo + logo  */
+        margin-bottom: 10px;
+    }
+    .Gauche-bottom{ /* liste d'amis + ajout */
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .Droite-bleu{
+        width:calc(100% - 20px);
+        height:calc(100% - 20px);
+
+        margin: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container-chat-intermediaire {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container-chat-intermediaire {
+        display: flex;
+        flex-direction: column-reverse; /* permet d'empiler les éléments enfants verticalement */
+    }
+}
